@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+    background-color: black;
+}
+
+:root {
+    --tamanho-header: 80px;
+    --tamanho-footer: 90px;
+    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    font-size: 15px;
+}
+
+
+.header {
+    /* height: var(--tamanho-header); */
+    height: 80px;
+    border-bottom: 2px solid #32b9cd;
+}
+
+.titulo {
+    color: #32b9cd;
+    width: fit-content;
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+
+.header .container {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    color: orange;
+}
+
+.header a {
+    text-decoration: none;
+    color: orange;
+}
+
+.agora {
+    font-weight: 800;
+}
+
+/*Banner*/
+.login {
+    display: flex;
+    height: var(--tamanho-banner);
+    color: white;
+    background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+    background-size: cover;
+    
+}
+
+.login .container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(219, 219, 219);
+    border-radius: 20px;
+    height: 38%;
+    width: 40%;
+    /* gap: 50px 30px; */
+  
+}
+
+.login .container .card {
+    display: flex;
+    flex-direction: column;
+    color: palevioletred;
+    width: 80%;
+   
+
+}
+
+.container .card .formulario{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+.container h2{
+    font-size: 30px;
+}
+
+.container .card .formulario .campo {
+
+    text-align: start;
+    margin-bottom:35px;
+    width: 100%;
+    font-size: 15px;
+    height: 30%;
+    
+}
+
+.container .card .formulario .campo span {
+    font-weight: bold;   
+}
+
+.container .card .formulario .campo input {
+    width: 100%;
+    border-radius: 15px;
+    border-color: #32b9cd;
+    height: 100%;
+   
+}
+
+.container .card .formulario .campo input::placeholder {
+    text-align: center;
+    
+}
+
+.formulario .botao {
+    align-self: center;
+    background-color: rgb(214, 48, 103);
+    border-radius: 10px;
+    width: 20%;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+.footer{
+    background-color: #32b9cd;
+    height: 90px;
+    color: #fff;
+    display: flex;
+    font-size: 15px;
+    }
+
+    .footer .container{
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .version {
+        font-size: 12px;
+    }
